@@ -4,7 +4,10 @@
   name: 'pdf-template',
 
   trigger: {
-    ref: ['refs/heads/master', 'refs/pull/*/head'],
+    ref: [
+      'refs/heads/master',
+      'refs/pull/*/head',
+    ],
     event: ['push', 'pull_request'],
   },
 
