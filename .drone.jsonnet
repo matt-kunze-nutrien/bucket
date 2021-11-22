@@ -16,6 +16,5 @@
     arch: 'amd64',
   },
 
-  steps: [
-  ],
+  steps: [],
 }
