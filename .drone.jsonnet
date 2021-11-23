@@ -1,7 +1,7 @@
 {
   kind: 'pipeline',
   type: 'docker',
-  name: 'pdf-template',
+  name: 'bucket',
 
   trigger: {
     ref: [
@@ -19,7 +19,7 @@
 
   steps: [
     {
-      name: 'test',
+      name: 'nothing',
       image: 'alpine:latest',
       when: {
         branch: ['master'],
