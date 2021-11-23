@@ -28,9 +28,10 @@ local dockerSockVolumes = [
     {
 
       name: 'environment',
-      image: '549323063936.dkr.ecr.us-east-2.amazonaws.com/nutrien/environment',
-      pull: 'never',
-      privileged: true,
+      image: 'alpine:latest',
+      // image: '549323063936.dkr.ecr.us-east-2.amazonaws.com/nutrien/environment',
+      // pull: 'never',
+      // privileged: true,
       when: {
         branch: ['master'],
       },
@@ -38,10 +39,11 @@ local dockerSockVolumes = [
     },
     {
       name: 'cleanup',
-      image: '549323063936.dkr.ecr.us-east-2.amazonaws.com/nutrien/cleanup',
-      pull: 'never',
+      image: 'alpine:latest',
+      // image: '549323063936.dkr.ecr.us-east-2.amazonaws.com/nutrien/cleanup',
+      // pull: 'never',
       failure: 'ignore',
-      privileged: true,
+      // privileged: true,
       when: {
         branch: ['master'],
         status: ['success', 'failure'],
