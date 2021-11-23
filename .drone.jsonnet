@@ -17,5 +17,13 @@
     arch: 'amd64',
   },
 
-  steps: [],
+  steps: [
+    {
+      name: 'test',
+      image: 'alpine:latest',
+      when: {
+        branch: ['master'],
+      },
+    },
+  ],
 }
